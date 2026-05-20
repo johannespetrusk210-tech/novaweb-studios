@@ -5,136 +5,201 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NovaWeb Studios</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Inter', sans-serif;
     }
 
     body {
-      background: #0b1220;
+      background: #050814;
       color: white;
     }
 
-    /* HERO */
-    header {
-      height: 100vh;
+    /* NAVBAR */
+    nav {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      text-align: center;
-      background: radial-gradient(circle at top, #1e3a8a, #0b1220);
-      padding: 20px;
+      padding: 20px 60px;
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
-    header h1 {
-      font-size: 48px;
+    nav img {
+      width: 50px;
+      border-radius: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    nav a:hover {
+      opacity: 1;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+      background: radial-gradient(circle at top, #1d4ed8, transparent 60%);
+    }
+
+    .hero img {
+      width: 90px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
       font-weight: 700;
     }
 
-    header p {
+    .hero p {
+      margin-top: 15px;
       color: #cbd5e1;
-      margin-top: 10px;
-      max-width: 500px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .btn {
+      display: inline-block;
       margin-top: 25px;
       padding: 12px 25px;
-      background: #38bdf8;
-      color: black;
+      background: #3b82f6;
+      color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-weight: 600;
       transition: 0.3s;
     }
 
     .btn:hover {
       transform: scale(1.05);
+      background: #2563eb;
     }
 
-    /* SECTIONS */
+    /* SECTION */
     section {
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
 
     h2 {
-      margin-bottom: 20px;
       font-size: 32px;
+      margin-bottom: 40px;
     }
 
+    /* GLASS CARDS */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
 
     .card {
-      background: #111a2e;
-      padding: 20px;
-      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 25px;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
       transition: 0.3s;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      background: #16213a;
+      transform: translateY(-8px);
+      border-color: rgba(59,130,246,0.6);
+    }
+
+    /* CONTACT */
+    .contact {
+      background: rgba(255,255,255,0.03);
+      padding: 60px 20px;
+      border-radius: 20px;
+      max-width: 800px;
+      margin: auto;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
-      background: #111a2e;
-      font-size: 14px;
+      padding: 30px;
+      font-size: 13px;
+      opacity: 0.6;
     }
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>NovaWeb Studios</h1>
-  <p>We design and build modern, fast, and professional websites for businesses and creators.</p>
-  <a href="#contact" class="btn">Get Started</a>
-</header>
+<!-- NAV -->
+<nav>
+  <img src="logo.png" alt="logo">
+  <div>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-<section>
-  <h2>Our Services</h2>
+<!-- HERO -->
+<div class="hero">
+  <img src="logo.png" alt="logo">
+  <h1>NovaWeb Studios</h1>
+  <p>We build premium, modern websites that help businesses grow online and look professional.</p>
+  <a class="btn" href="#contact">Start a Project</a>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>What We Do</h2>
 
   <div class="grid">
     <div class="card">
       <h3>Web Design</h3>
-      <p>Modern UI/UX designs that attract customers.</p>
+      <p>Modern UI/UX designs that convert visitors into clients.</p>
     </div>
 
     <div class="card">
       <h3>Web Development</h3>
-      <p>Fast, responsive websites built with clean code.</p>
+      <p>Fast, responsive, and clean-coded websites.</p>
     </div>
 
     <div class="card">
-      <h3>Branding</h3>
-      <p>We help build strong online identities.</p>
+      <h3>Brand Identity</h3>
+      <p>We build strong digital brands for businesses.</p>
     </div>
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
-  <h2>Contact</h2>
-  <p>Email: novawebstudio@gmail.com</p>
+  <h2>Let’s Work Together</h2>
+
+  <div class="contact">
+    <p>Email: novawebstudio@gmail.com</p>
+    <p>We respond within 24 hours</p>
+  </div>
 </section>
 
 <footer>
-  © 2026 NovaWeb Studios
+  © 2026 NovaWeb Studios — Built with passion
 </footer>
 
 </body>
-</html>
+</html>      
