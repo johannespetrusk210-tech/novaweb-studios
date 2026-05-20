@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Website Template</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0b1220;
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+      background: radial-gradient(circle at top, #2563eb, transparent 60%);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      color: #cbd5e1;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 25px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Your Business Name</h1>
+  <p>We help businesses grow online with modern, fast and professional websites.</p>
+  <a class="btn" href="#contact">Get a Free Quote</a>
+</div>
+
+<!-- SERVICES -->
+<section>
+  <h2>Our Services</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Web Design</h3>
+      <p>Modern and clean UI for your business.</p>
+    </div>
+
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>Fast and responsive websites built to convert customers.</p>
+    </div>
+
+    <div class="card">
+      <h3>Branding</h3>
+      <p>We help your business look professional online.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section>
+  <h2>Why Choose Us?</h2>
+
+  <div class="grid">
+    <div class="card">Fast Delivery</div>
+    <div class="card">Affordable Pricing</div>
+    <div class="card">Mobile Friendly</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+
+  <div class="card">
+    <p>Email: yourbusiness@gmail.com</p>
+    <p>Phone: +264 XXX XXX XXX</p>
+  </div>
+
+  <a class="btn" href="https://wa.me/264XXXXXXXXX">WhatsApp Us</a>
+</section>
+
+<footer>
+  © 2026 Your Business
+</footer>
+
+</body>
+</html>
