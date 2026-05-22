@@ -89,49 +89,27 @@ button:hover {
       opacity: 1;
     }
 <img src="logo.png">
-    /* HERO */
     .hero {
-      text-align: center;
-      padding: 120px 20px;
-      background: radial-gradient(circle at top, #1d4ed8, transparent 60%);
-    }
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(-45deg, #0b1220, #1d4ed8, #2563eb, #0b1220);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+}
 
-    .hero img {
-      width: 90px;
-      margin-bottom: 20px;
-      border-radius: 15px;
-    }
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
 
-    .hero h1 {
-      font-size: 52px;
-      font-weight: 700;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    .hero p {
-      margin-top: 15px;
-      color: #cbd5e1;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 25px;
-      background: #3b82f6;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-      background: #2563eb;
-    }
-<img src="logo.png" alt="NovaWeb Studios Logo" width="180">
+  100% {
+    background-position: 0% 50%;
+  }
+}
     /* SECTION */
     section {
       padding: 80px 20px;
