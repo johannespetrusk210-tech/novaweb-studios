@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaWeb Studios</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial,sans-serif;
+    }
+
+    body{
+      background:#050814;
+      color:white;
+    }
+
+    /* NAVBAR */
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 40px;
+      background:rgba(255,255,255,0.05);
+      position:sticky;
+      top:0;
+      z-index:1000;
+      backdrop-filter:blur(10px);
+    }
+
+    nav img{
+      width:50px;
+      border-radius:10px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-size:14px;
+    }
+
+    nav a:hover{
+      color:#3b82f6;
+    }
+
+    /* HERO */
+    .hero{
+      text-align:center;
+      padding:120px 20px;
+      background:linear-gradient(-45deg,#0b1220,#1d4ed8,#2563eb,#0b1220);
+      background-size:400% 400%;
+      animation:gradientBG 12s ease infinite;
+    }
+
+    @keyframes gradientBG{
+      0%{
+        background-position:0% 50%;
+      }
+
+      50%{
+        background-position:100% 50%;
+      }
+
+      100%{
+        background-position:0% 50%;
+      }
+    }
+
+    /* LOGO */
+    .hero img{
+      width:220px;
+      margin-bottom:20px;
+      border-radius:16px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.4);
+      animation:fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(-20px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    .hero h1{
+      font-size:52px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      max-width:700px;
+      margin:auto;
+      color:#cbd5e1;
+      line-height:1.6;
+    }
+
+    /* BUTTON */
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:14px 28px;
+      background:#2563eb;
+      color:white;
+      text-decoration:none;
+      border-radius:10px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#1d4ed8;
+      transform:scale(1.05);
+    }
+
+    /* SECTIONS */
+    section{
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    h2{
+      font-size:38px;
+      margin-bottom:40px;
+    }
+
+    /* GRID */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    /* CARDS */
+    .card{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      padding:30px;
+      border-radius:18px;
+      transition:0.4s;
+      backdrop-filter:blur(10px);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:#3b82f6;
+    }
+
+    .card h3{
+      margin-bottom:15px;
+      font-size:24px;
+    }
+
+    .card p{
+      color:#cbd5e1;
+      line-height:1.6;
+    }
+
+    /* CONTACT */
+    .contact{
+      max-width:700px;
+      margin:auto;
+    }
+
+    /* FOOTER */
+    footer{
+      text-align:center;
+      padding:30px;
+      background:rgba(255,255,255,0.05);
+      margin-top:40px;
+    }
+
+    .socials{
+      margin-top:15px;
+    }
+
+    .socials a{
+      color:#60a5fa;
+      margin:0 10px;
+      text-decoration:none;
+    }
+
+    .socials a:hover{
+      color:white;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+
+    <img src="logo.png" alt="NovaWeb Studios Logo">
+
+    <div>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+
+    <img src="logo.png" alt="NovaWeb Studios Logo">
+
+    <h1>NovaWeb Studios</h1>
+
+    <p>
+      We design premium modern websites that help businesses grow online.
+    </p>
+
+    <a href="#contact" class="btn">
+      Start a Project
+    </a>
+
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+
+    <h2>Our Services</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>
+          Modern UI/UX designs for businesses and creators.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>
+          Fast and responsive websites built with clean code.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Branding</h3>
+        <p>
+          Professional digital branding and online identity.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section>
+
+    <h2>Why Choose NovaWeb Studios?</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>⚡ Fast Delivery</h3>
+        <p>
+          We deliver websites quickly and professionally.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>💼 Professional Design</h3>
+        <p>
+          Clean modern websites that build trust.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>📱 Mobile Friendly</h3>
+        <p>
+          Your website works perfectly on phones and tablets.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <h2>Start Your Project Today</h2>
+
+    <div class="contact">
+
+      <p>
+        Contact NovaWeb Studios and let’s build your online presence.
+      </p>
+
+      <a href="https://wa.me/264XXXXXXXXX" class="btn">
+        Chat on WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 NovaWeb Studios • Windhoek, Namibia
+    </p>
+
+    <div class="socials">
+
+      <a href="#">Instagram</a>
+      <a href="#">GitHub</a>
+      <a href="#">WhatsApp</a>
+
+    </div>
+
+  </footer>
+
+</body>
+        </html>
