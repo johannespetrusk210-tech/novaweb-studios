@@ -1,29 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Projects - NovaWeb Studios</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaWeb Projects</title>
+
+  <style>
+
+    body{
+      background:#050814;
+      color:white;
+      font-family:Arial;
+      margin:0;
+      padding:0;
+    }
+
+    h1{
+      text-align:center;
+      padding:40px 20px;
+      font-size:48px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+      padding:40px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:16px;
+      overflow:hidden;
+      transition:0.4s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      border-color:#3b82f6;
+    }
+
+    .card img{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card h2{
+      margin-bottom:10px;
+    }
+
+    .card p{
+      color:#cbd5e1;
+      line-height:1.6;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:15px;
+      padding:10px 20px;
+      background:#2563eb;
+      color:white;
+      text-decoration:none;
+      border-radius:10px;
+    }
+
+  </style>
 </head>
 
 <body>
 
-<header>
   <h1>Our Projects</h1>
-</header>
 
-<section class="grid">
+  <div class="grid">
 
-  <div class="card">
-    <h3>Restaurant Website</h3>
-    <p>Modern ordering system UI</p>
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+
+      <div class="card-content">
+
+        <h2>Restaurant Website</h2>
+
+        <p>
+          Modern responsive website for a restaurant business.
+        </p>
+
+        <a href="#" class="btn">
+          View Project
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+
+      <div class="card-content">
+
+        <h2>Gym Website</h2>
+
+        <p>
+          Fitness website with booking and membership sections.
+        </p>
+
+        <a href="#" class="btn">
+          View Project
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+
+      <div class="card-content">
+
+        <h2>Tech Startup</h2>
+
+        <p>
+          Premium startup landing page with modern animations.
+        </p>
+
+        <a href="#" class="btn">
+          View Project
+        </a>
+
+      </div>
+
+    </div>
+
   </div>
-
-  <div class="card">
-    <h3>Portfolio Website</h3>
-    <p>Personal branding website for developers</p>
-  </div>
-
-</section>
 
 </body>
 </html>
